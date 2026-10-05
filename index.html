@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ne"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>दुरा इतिहास र संस्कृति</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Serif+Devanagari:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f6f4;--card:#fff;--ink:#14231f;--mute:#566a64;--pine:#16352f;--on-pine:#eaf3ef;--gold:#e3a008;--red:#9b2c26;--line:#d3dedb;--z:1;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1816;--card:#16252b;--ink:#e6efec;--mute:#9db3ac;--pine:#0a2420;--line:#2a3e3a}}
+:root[data-theme="dark"]{--bg:#0e1816;--card:#16252b;--ink:#e6efec;--mute:#9db3ac;--pine:#0a2420;--line:#2a3e3a}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-padding-top:64px;font-size:calc(100% * var(--z))}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans Devanagari',system-ui,sans-serif;line-height:1.75}
+h1,h2,h3{font-family:'Noto Serif Devanagari',serif;line-height:1.4;margin:0}
+a{color:inherit}
+.wrap{max-width:1480px;margin:0 auto;padding:0 clamp(12px,2.5vw,32px)}
+.weave{height:12px;background:repeating-linear-gradient(90deg,var(--red) 0 14px,var(--gold) 14px 20px,var(--pine) 20px 34px,var(--gold) 34px 40px)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:4px;align-items:center;overflow-x:auto;padding-top:8px;padding-bottom:8px}
+nav a{white-space:nowrap;text-decoration:none;padding:4px 12px;border-radius:99px;font-size:.92rem}
+nav a:hover,nav a[aria-current=page]{background:var(--line)}
+nav .brand{font-family:'Noto Serif Devanagari',serif;font-weight:800;margin-right:8px}
+.tb{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:4px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+#theme{margin-left:auto}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hero{background:var(--pine);color:var(--on-pine);padding:44px 0 36px}
+.hero h1{font-size:clamp(2.2rem,7vw,4rem);font-weight:800}
+.hero p{max-width:60ch;color:#c4d8d1;margin:10px 0 20px}
+.search{display:flex;max-width:580px;background:var(--card);border-radius:10px;overflow:hidden}
+.search input{flex:1;border:0;padding:13px 16px;font:inherit;background:transparent;color:var(--ink);min-width:0}
+.search button{border:0;background:var(--gold);color:#201600;padding:0 20px;font:inherit;font-weight:600;cursor:pointer}
+main{padding:30px 0 50px;min-height:60vh}
+h2.pt{font-size:1.8rem;font-weight:800;margin-bottom:4px}
+.sub{color:var(--mute);margin:0 0 20px;max-width:64ch}
+.stats{display:flex;flex-wrap:wrap;gap:22px;margin-top:22px;color:#c4d8d1}
+.stats b{display:block;font-family:'Noto Serif Devanagari',serif;font-size:1.6rem;color:var(--gold);line-height:1.2}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:6px;padding:14px 16px;text-decoration:none}
+.card:hover{border-left-color:var(--red)}
+.card h3{font-size:1.1rem}.card .n,.card .m{color:var(--mute);font-size:.85rem}
+.row2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:34px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 20px}
+.box h3{font-size:1.2rem;margin-bottom:6px}
+.btn{display:inline-block;background:var(--pine);color:var(--on-pine);border:0;border-radius:8px;padding:9px 20px;font:inherit;cursor:pointer;text-decoration:none}
+.btn:disabled{opacity:.35;cursor:default}
+.btn.g{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.read{display:grid;grid-template-columns:270px minmax(0,1fr);gap:clamp(18px,3vw,44px)}
+@media(max-width:800px){.read{grid-template-columns:1fr}}
+.side{position:sticky;top:60px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;font-size:.93rem}
+@media(max-width:800px){.side{position:static;max-height:none}}
+.side a{display:block;text-decoration:none;padding:4px 10px;border-radius:6px;color:var(--mute)}
+.side a[aria-current=true]{background:var(--pine);color:var(--on-pine)}
+.side h3{font-size:1rem;margin-bottom:8px}
+article h2{font-size:2rem;font-weight:800}
+article .pg{color:var(--mute);font-size:.9rem;margin-bottom:16px}
+article p{font-size:1.08rem;max-width:95ch;margin:0 0 1em}
+article p.cap{font-size:.9rem;color:var(--mute);border-left:3px solid var(--gold);padding-left:10px}
+.gl{border-bottom:2px dotted var(--gold);cursor:help;text-decoration:none}
+mark{background:var(--gold);color:#201600;border-radius:3px;padding:0 2px}
+.pn{display:flex;justify-content:space-between;gap:10px;margin-top:28px;flex-wrap:wrap}
+.tools{display:flex;gap:6px;margin:0 0 16px;flex-wrap:wrap}
+.bar{height:10px;border-radius:5px;background:var(--line);overflow:hidden;margin-bottom:16px}
+.bar i{display:block;height:100%;background:repeating-linear-gradient(90deg,var(--red) 0 10px,var(--gold) 10px 14px,var(--pine) 14px 24px);transition:width .35s}
+.dots{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.dots a{width:14px;height:14px;border-radius:50%;border:2px solid var(--pine)}
+.dots a[aria-current=true]{background:var(--gold);border-color:var(--gold)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:5px 14px;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none}
+.chip[aria-pressed=true],.chip[aria-current=true]{background:var(--pine);color:var(--on-pine);border-color:var(--pine)}
+.res{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin-bottom:10px;display:block;text-decoration:none}
+.res b{font-family:'Noto Serif Devanagari',serif}.res small{color:var(--mute);display:block}
+input.f{width:100%;max-width:520px;padding:11px 14px;border:1px solid var(--line);border-radius:8px;font:inherit;background:var(--card);color:var(--ink);margin-bottom:18px}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin-bottom:10px;padding:10px 16px}
+summary{cursor:pointer;font-family:'Noto Serif Devanagari',serif;font-weight:600}
+details p{margin:10px 0 0;max-width:95ch}
+.gw{border-bottom:1px solid var(--line);padding:10px 0}.gw b{font-family:'Noto Serif Devanagari',serif;color:var(--red)}
+.ph{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.ph button{border:0;padding:0;background:var(--card);border-radius:8px;overflow:hidden;cursor:pointer;text-align:left;color:var(--ink);font:inherit}
+.ph img{width:100%;height:160px;object-fit:cover;display:block}.ph span{display:block;padding:6px 10px;font-size:.85rem;color:var(--mute)}
+dialog{border:0;border-radius:10px;padding:0;max-width:720px;width:calc(100% - 28px);background:var(--card);color:var(--ink)}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+dialog img{width:100%;display:block}.dlg{padding:14px 18px}
+.opt{display:block;width:100%;text-align:left;margin-bottom:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:10px 14px;font:inherit;cursor:pointer}
+.opt.ok{background:#1d6b45;color:#fff;border-color:#1d6b45}.opt.no{background:var(--red);color:#fff;border-color:var(--red)}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin-bottom:10px}
+.pcard b{font-family:'Noto Serif Devanagari',serif}.pcard small{color:var(--mute);display:block}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.pc{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--gold);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:10px;position:relative}
+.pc:hover{border-top-color:var(--red);box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.pc .top{display:flex;gap:12px;align-items:center}
+.av{flex:none;width:48px;height:48px;border-radius:50%;background:var(--pine);color:var(--gold);display:grid;place-items:center;font-family:'Noto Serif Devanagari',serif;font-weight:800;font-size:1.3rem}
+.pc h3{font-size:1.1rem;line-height:1.35}
+.pc .no{position:absolute;top:10px;right:14px;color:var(--mute);font-size:.8rem}
+.pc .loc{align-self:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:2px 12px;font-size:.85rem;color:var(--mute)}
+.pc p{margin:0;font-size:.97rem}
+footer{border-top:1px solid var(--line);padding:20px 0;color:var(--mute);font-size:.88rem}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head>
+<body>
+<div class="weave"></div>
+<nav><div class="wrap" id="nav"></div></nav>
+<div id="app"></div>
+<footer><div class="wrap">पुस्तक: <i>दुरा इतिहास र संस्कृति</i>, यमबहादुर दुरा · प्रकाशक: दुरा सेवा समाज (२०७९) · सर्वाधिकार लेखक/प्रकाशकमा। पुस्तकको पाठ डिजिटल रूपान्तरणमा केही अशुद्धि हुन सक्छन्; सन्दर्भका लागि मूल पुस्तक हेर्नुहोस्।</div></footer>
+<dialog id="dlg"><div id="dbody"></div><div class="dlg"><button class="btn g" id="dx">बन्द गर्नुहोस्</button></div></dialog>
+<script src="data.js"></script>
+<script>
+const D=window.DURA_DATA;
+const B=D.book,X=D.extra,GAL=D.gal;
+const $=s=>document.querySelector(s),app=$('#app');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const st={get(k,d){try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const NUM='०१२३४५६७८९',dn=n=>String(n).replace(/\d/g,d=>NUM[d]);
+const ptext=p=>p.t||p.c||'';
+const G=X.glossary,GT=G.map((g,i)=>[g.w,i]).filter(x=>x[0].length>=3).sort((a,b)=>b[0].length-a[0].length);
+const GRE=new RegExp(GT.map(x=>x[0].replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
+const GI={};GT.forEach(x=>GI[x[0]]=x[1]);
+function rich(t,q){let h=esc(t).replace(GRE,m=>'<a class="gl" href="#" data-g="'+GI[m]+'">'+m+'</a>');
+ if(q){const e=esc(q).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');h=h.split(/(<[^>]+>)/).map(s=>s[0]==='<'?s:s.replace(new RegExp(e,'g'),'<mark>$&</mark>')).join('')}return h}
+// index
+const IDX=[];B.forEach(c=>c.sections.forEach((s,i)=>IDX.push({c:c.n,s:i,t:s.title,p:s.page,x:s.paras.map(ptext).join(' ')})));
+const NS=B.reduce((a,c)=>a+c.sections.length,0);
+// pages
+const NAV=[['#/','मुख्य'],['#/ch','अध्यायहरू'],['#/journeys','जीवनचक्र'],['#/calendar','चाडपर्व'],['#/glossary','शब्दावली'],['#/people','व्यक्तित्व'],['#/gallery','तस्बिर'],['#/quiz','क्विज'],['#/about','बारेमा']];
+function drawNav(h){$('#nav').innerHTML='<span class="brand">दुरा संस्कृति</span>'+NAV.map(n=>'<a href="'+n[0]+'"'+((n[0]==='#/'?h==='#/':h.startsWith(n[0])||(n[0]==='#/ch'&&h.startsWith('#/ch')))?' aria-current="page"':'')+'>'+n[1]+'</a>').join('')+'<button class="tb" id="fa" aria-label="Smaller text">A−</button><button class="tb" id="fb" aria-label="Larger text">A+</button><span id="zl" style="font-size:.8rem;color:var(--mute)">'+Math.round(st.get('z',1)*100)+'%</span><button class="tb" id="theme" aria-label="Toggle theme">◐</button>'}
+const searchBox=(v)=>'<form class="search" id="sf" role="search"><input id="q" type="search" value="'+esc(v||'')+'" placeholder="खोज्नुहोस् · जस्तै: कन्यादान, तिहार, अर्घौं, भयँर" aria-label="Search the book"><button>खोज</button></form>';
+function home(){const last=st.get('last',null);
+ app.innerHTML='<header class="hero"><div class="wrap"><h1>दुरा इतिहास र संस्कृति</h1><p>दुरा समुदायको इतिहास, विश्वास, चाडपर्व, खानपान र संस्कार — यमबहादुर दुराको पुस्तकबाट, खोज्न र पढ्न सजिलो बनाइएको।</p>'+searchBox()+'<div class="stats"><div><b>'+dn(B.length)+'</b>अध्याय</div><div><b>'+dn(NS)+'</b>विषय</div><div><b>'+dn(G.length)+'</b>शब्दावली</div><div><b>'+dn(GAL.length)+'</b>तस्बिर</div></div></div></header><main><div class="wrap">'+
+ (last?'<p><a class="btn" href="'+last.h+'">पढ्न जारी राख्नुहोस् · '+esc(last.t)+'</a></p>':'')+
+ '<h2 class="pt">के खोज्दै हुनुहुन्छ?</h2><div class="grid">'+
+ [['#/journeys','जीवनचक्र यात्रा','जन्म, विवाह र मृत्यु संस्कार — चरणबद्ध रूपमा'],['#/calendar','चाडपर्व','वैशाख पूर्णिमादेखि नयाँ उत्सवसम्म'],['#/ch','१२ अध्याय','इतिहास, स्थाननाम, विश्वास, लोकजीवन, खाद्य, पूजा…'],['#/glossary','शब्दावली','दुरा समुदायका विशेष शब्दको अर्थ'],['#/people','यशस्वी व्यक्तित्व','समुदायका योगदानकर्ताको सूची'],['#/quiz','क्विज','शब्दावलीबाट आफ्नो ज्ञान जाँच्नुहोस्']].map(x=>'<a class="card" href="'+x[0]+'"><h3>'+x[1]+'</h3><div class="m">'+x[2]+'</div></a>').join('')+'</div>'+
+ '<div class="row2"><div class="box"><h3>आजको शब्द</h3><div id="wod"></div></div><div class="box"><h3>तस्बिर झलक</h3><a href="#/gallery"><img alt="" style="width:100%;border-radius:6px" src="'+GAL[Math.floor(Date.now()/864e5)%GAL.length].i+'"></a></div></div></div></main>';
+ const g=G[Math.floor(Date.now()/864e5)%G.length];$('#wod').innerHTML='<p><b style="font-family:\'Noto Serif Devanagari\',serif;font-size:1.3rem;color:var(--red)">'+esc(g.w)+'</b></p><p>'+esc(g.d)+'</p><a href="#/glossary">पूरा शब्दावली →</a>'}
+function chList(){app.innerHTML='<main><div class="wrap"><h2 class="pt">अध्यायहरू</h2><p class="sub">कुनै अध्याय खोल्नुहोस् र विषयअनुसार पढ्नुहोस्।</p><div class="grid">'+B.map(c=>'<a class="card" href="#/ch/'+c.n+'/0"><div class="n">अध्याय '+dn(c.n)+' · पृष्ठ '+dn(c.pages.split('–')[0])+'–'+dn(c.pages.split('–')[1])+'</div><h3>'+c.title+'</h3><div class="m">'+dn(c.sections.length)+' विषय</div></a>').join('')+'</div></div></main>'}
+function chapter(n,i,q){const c=B[n-1],s=c.sections[i];if(!s){location.hash='#/ch';return}
+ st.set('last',{h:'#/ch/'+n+'/'+i,t:s.title});
+ let prev=i>0?['#/ch/'+n+'/'+(i-1),c.sections[i-1].title]:n>1?['#/ch/'+(n-1)+'/'+(B[n-2].sections.length-1),B[n-2].title]:null;
+ let next=i<c.sections.length-1?['#/ch/'+n+'/'+(i+1),c.sections[i+1].title]:n<B.length?['#/ch/'+(n+1)+'/0',B[n].title]:null;
+ app.innerHTML='<main><div class="wrap read"><aside class="side"><h3>अध्याय '+dn(n)+' · '+c.title+'</h3>'+c.sections.map((x,k)=>'<a href="#/ch/'+n+'/'+k+'"'+(k===i?' aria-current="true"':'')+'>'+esc(x.title)+'</a>').join('')+'<p style="margin-top:14px"><a href="#/ch">← सबै अध्याय</a></p></aside><article><div class="pg">अध्याय '+dn(n)+' · पुस्तकको पृष्ठ '+dn(s.page)+'</div><h2>'+esc(s.title)+'</h2><div class="tools"><button class="tb" id="bm">'+(st.get('bm',[]).includes(n+'/'+i)?'★ सुरक्षित':'☆ सुरक्षित गर्नुहोस्')+'</button></div>'+
+ (s.paras.length?s.paras.map(p=>'<p'+(p.c?' class="cap"':'')+'>'+rich(ptext(p),q)+'</p>').join(''):'<p style="color:var(--mute)">यस शीर्षकमा छुट्टै पाठ छैन।</p>')+
+ '<div class="pn">'+(prev?'<a class="btn g" href="'+prev[0]+'">← '+esc(prev[1])+'</a>':'<span></span>')+(next?'<a class="btn" href="'+next[0]+'">'+esc(next[1])+' →</a>':'')+'</div></article></div></main>';
+ const b=$('#bm');b.onclick=()=>{let a=st.get('bm',[]),k=n+'/'+i;a=a.includes(k)?a.filter(x=>x!==k):a.concat(k);st.set('bm',a);b.textContent=a.includes(k)?'★ सुरक्षित':'☆ सुरक्षित गर्नुहोस्'};
+ if(q){const m=$('mark');if(m)m.scrollIntoView({block:'center'})}else scrollTo(0,0)}
+const JR={birth:[9,'जन्म संस्कार'],marriage:[10,'विवाह पद्धति'],death:[11,'मृत्यु संस्कार']};
+function journeys(){app.innerHTML='<main><div class="wrap"><h2 class="pt">जीवनचक्र यात्रा</h2><p class="sub">जन्मदेखि मृत्युसम्मका संस्कार, पुस्तकमा आएको क्रमअनुसार चरणबद्ध रूपमा पढ्नुहोस्।</p><div class="grid">'+Object.entries(JR).map(([k,v])=>'<a class="card" href="#/j/'+k+'/0"><div class="n">अध्याय '+dn(v[0]+1)+'</div><h3>'+v[1]+'</h3><div class="m">'+dn(B[v[0]].sections.length)+' चरण</div></a>').join('')+'</div></div></main>'}
+function journey(k,i){const r=JR[k];if(!r){location.hash='#/journeys';return}const c=B[r[0]],it=c.sections,s=it[i];if(!s){location.hash='#/j/'+k+'/0';return}
+ app.innerHTML='<main><div class="wrap"><p><a href="#/journeys">← जीवनचक्र</a></p><h2 class="pt">'+r[1]+'</h2><div class="bar"><i style="width:'+((i+1)/it.length*100)+'%"></i></div><article><div class="pg">चरण '+dn(i+1)+' / '+dn(it.length)+' · पुस्तकको पृष्ठ '+dn(s.page)+'</div><h2>'+esc(s.title)+'</h2>'+s.paras.map(p=>'<p'+(p.c?' class="cap"':'')+'>'+rich(ptext(p))+'</p>').join('')+'<div class="pn">'+(i?'<a class="btn g" href="#/j/'+k+'/'+(i-1)+'">← पछिल्लो</a>':'<span></span>')+(i<it.length-1?'<a class="btn" href="#/j/'+k+'/'+(i+1)+'">अर्को →</a>':'<a class="btn" href="#/journeys">यात्रा सकियो</a>')+'</div></article><div class="dots">'+it.map((x,j)=>'<a href="#/j/'+k+'/'+j+'" title="'+esc(x.title)+'"'+(j===i?' aria-current="true"':'')+'></a>').join('')+'</div></div></main>';scrollTo(0,0)}
+function calendar(){const c=B[5];app.innerHTML='<main><div class="wrap"><h2 class="pt">चाडपर्व तथा उत्सव</h2><p class="sub">अध्याय ६ बाट — हरेक पर्व खोलेर पढ्नुहोस्।</p>'+c.sections.map((s,i)=>'<details'+(i===0?' open':'')+'><summary>'+esc(s.title)+' <small style="font-weight:400;color:var(--mute)">· पृ. '+dn(s.page)+'</small></summary>'+s.paras.map(p=>'<p>'+rich(ptext(p))+'</p>').join('')+'</details>').join('')+'</div></main>'}
+function glossary(){app.innerHTML='<main><div class="wrap"><h2 class="pt">शब्दावली</h2><p class="sub">दुरा समुदायका विशेष शब्द र तिनका अर्थ। पाठमा थोप्ला रेखा भएका शब्दमा थिचेर पनि अर्थ हेर्न सकिन्छ।</p><input class="f" id="gf" placeholder="शब्द खोज्नुहोस्" aria-label="Filter glossary"><div id="gl"></div></div></main>';
+ const draw=()=>{const v=$('#gf').value.trim();$('#gl').innerHTML=G.filter(g=>!v||g.w.includes(v)||g.d.includes(v)).sort((a,b)=>a.w.localeCompare(b.w,'ne')).map(g=>'<div class="gw"><b>'+esc(g.w)+'</b> — '+esc(g.d)+'</div>').join('')||'<p>केही भेटिएन।</p>'};$('#gf').oninput=draw;draw()}
+function people(){const P=X.people;app.innerHTML='<main><div class="wrap"><h2 class="pt">यशस्वी व्यक्तित्वहरू</h2><p class="sub">दुरा समुदायका योगदानकर्ताहरू (पुस्तकको वर्णानुक्रम सूची)।</p><input class="f" id="pf" placeholder="नाम, ठेगाना वा योगदान खोज्नुहोस्" aria-label="Filter people"><p class="sub" id="pc"></p><div class="pgrid" id="pl"></div></div></main>';
+ const draw=()=>{const v=$('#pf').value.trim(),L=P.map((p,i)=>[p,i]).filter(x=>!v||x[0].join(' ').includes(v));$('#pc').textContent=dn(L.length)+' जना';$('#pl').innerHTML=L.map(([p,i])=>'<div class="pc"><span class="no">'+dn(i+1)+'</span><div class="top"><div class="av">'+esc(Array.from(p[0])[0]||'')+'</div><h3>'+esc(p[0])+'</h3></div>'+(p[1]?'<span class="loc">📍 '+esc(p[1])+'</span>':'')+'<p>'+esc(p[2])+'</p></div>').join('')||'<p>केही भेटिएन।</p>'};$('#pf').oninput=draw;draw()}
+function gallery(){app.innerHTML='<main><div class="wrap"><h2 class="pt">तस्बिर खण्ड</h2><p class="sub">पुस्तकको तस्बिर खण्डबाट। ठूलो रूपमा हेर्न थिच्नुहोस्।</p><div class="ph">'+GAL.map((g,i)=>'<button data-ph="'+i+'"><img loading="lazy" alt="'+esc(g.c||'तस्बिर')+'" src="'+g.i+'"><span>'+esc(g.c||'तस्बिर खण्ड · पृ. '+dn(g.p))+'</span></button>').join('')+'</div></div></main>'}
+function search(q){app.innerHTML='<main><div class="wrap"><h2 class="pt">खोज नतिजा</h2>'+searchBox(q)+'<div id="sr" style="margin-top:18px"></div></div></main>';const o=$('#sr');q=(q||'').trim();if(!q){o.innerHTML='<p class="sub">खोज्ने शब्द लेख्नुहोस्।</p>';return}
+ const R=[];IDX.forEach(d=>{const ti=d.t.indexOf(q),xi=d.x.indexOf(q);if(ti>-1||xi>-1)R.push({d,ti,xi,sc:(ti>-1?100:0)+(d.x.split(q).length-1)})});R.sort((a,b)=>b.sc-a.sc);
+ const gr=G.filter(g=>g.w.includes(q)||g.d.includes(q));
+ o.innerHTML=(gr.length?'<h3 style="margin:0 0 8px">शब्दावली</h3>'+gr.slice(0,5).map(g=>'<div class="gw"><b>'+esc(g.w)+'</b> — '+esc(g.d)+'</div>').join(''):'')+'<h3 style="margin:18px 0 8px">पुस्तकमा ('+dn(R.length)+')</h3>'+(R.slice(0,40).map(r=>{const t=r.d.x,k=r.xi>-1?r.xi:0,sn=t.slice(Math.max(0,k-60),k+110);return'<a class="res" href="#/ch/'+r.d.c+'/'+r.d.s+'?q='+encodeURIComponent(q)+'"><b>'+esc(r.d.t)+'</b><small>अध्याय '+dn(r.d.c)+' · पृ. '+dn(r.d.p)+'</small>…'+rich(sn,q).replace(/<a class="gl"[^>]*>|<\/a>/g,'')+'…</a>'}).join('')||'<p>कुनै नतिजा भेटिएन। अर्को शब्दले खोज्नुहोस्।</p>')}
+let QZ=null;
+function quiz(){if(!QZ||QZ.i>=QZ.q.length){const pool=G.filter(g=>g.d.length>25&&g.d.length<200).sort(()=>Math.random()-.5).slice(0,10);QZ={i:0,s:0,q:pool.map(g=>({d:g.d,a:g.w,o:[g.w].concat(G.filter(x=>x.w!==g.w).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.w)).sort(()=>Math.random()-.5)}))};if(QZ.i===0&&QZ.done){}}
+ const q=QZ.q[QZ.i];app.innerHTML='<main><div class="wrap"><h2 class="pt">क्विज</h2><p class="sub">प्रश्न '+dn(QZ.i+1)+' / '+dn(QZ.q.length)+' · अंक '+dn(QZ.s)+'</p><div class="bar"><i style="width:'+(QZ.i/QZ.q.length*100)+'%"></i></div><div class="box"><h3>कुन शब्दको अर्थ हो?</h3><p>“'+esc(q.d)+'”</p>'+q.o.map(o=>'<button class="opt" data-o="'+esc(o)+'">'+esc(o)+'</button>').join('')+'<div id="qn"></div></div></div></main>'}
+function quizEnd(){app.innerHTML='<main><div class="wrap"><h2 class="pt">क्विज सकियो</h2><div class="box"><h3>'+dn(QZ.s)+' / '+dn(QZ.q.length)+' अंक</h3><p>'+(QZ.s>=8?'उत्कृष्ट! तपाईंलाई दुरा शब्दहरू राम्रोसँग थाहा रहेछ।':QZ.s>=5?'राम्रो प्रयास! शब्दावली पढेर फेरि खेल्नुहोस्।':'शब्दावली पढेर फेरि प्रयास गर्नुहोस्।')+'</p><a class="btn" href="#/quiz" id="again">फेरि खेल्नुहोस्</a> <a class="btn g" href="#/glossary">शब्दावली पढ्नुहोस्</a></div></div></main>';QZ=null}
+function about(){app.innerHTML='<main><div class="wrap"><h2 class="pt">यस साइटको बारेमा</h2><div class="box" style="max-width:700px"><p><b>पुस्तक:</b> दुरा इतिहास र संस्कृति<br><b>लेखक:</b> यमबहादुर दुरा<br><b>प्रकाशक:</b> दुरा सेवा समाज, २०७९ (सन् २०२३)</p><p>यो वेबसाइटले पुस्तकको सामग्रीलाई खोज, चरणबद्ध पठन, शब्दावली र क्विजमार्फत सजिलै पढ्न मिल्ने बनाउँछ। पाठ पुस्तकबाट नै लिइएको हो; पृष्ठ सङ्ख्या मूल पुस्तकको हो।</p><p>पुरानो फन्टबाट यूनिकोडमा रूपान्तरण गर्दा केही शब्दमा अशुद्धि रहन सक्छ। निश्चित सन्दर्भका लागि मूल पुस्तक हेर्नुहोस्।</p><h3 style="margin-top:14px">पुस्तकको अनुसूची</h3><details><summary>दुरा जातिको वंशावली (अनुसूची २)</summary>'+X.genealogy.map(t=>'<p>'+esc(t)+'</p>').join('')+'</details></div></div></main>'}
+// router
+function route(){const full=location.hash||'#/',[h,qs]=full.split('?'),q=qs&&new URLSearchParams(qs).get('q'),p=h.split('/');drawNav(h);
+ if(h==='#/'||h==='')home();else if(p[1]==='ch'&&!p[2])chList();else if(p[1]==='ch')chapter(+p[2],+p[3]||0,q);else if(p[1]==='journeys')journeys();else if(p[1]==='j')journey(p[2],+p[3]||0);
+ else if(p[1]==='calendar')calendar();else if(p[1]==='glossary')glossary();else if(p[1]==='people')people();else if(p[1]==='gallery')gallery();else if(p[1]==='search')search(decodeURIComponent(p[2]||''));
+ else if(p[1]==='quiz')quiz();else if(p[1]==='about')about();else home();
+ if(!(p[1]==='ch'&&p[2]&&q)&&p[1]!=='quiz')scrollTo(0,0)}
+addEventListener('hashchange',route);
+document.addEventListener('submit',e=>{if(e.target.id==='sf'){e.preventDefault();location.hash='#/search/'+encodeURIComponent($('#q').value.trim())}});
+document.addEventListener('click',e=>{const t=e.target;
+ const g=t.closest('[data-g]');if(g){e.preventDefault();$('#dbody').innerHTML='<div class="dlg"><h3 style="color:var(--red)">'+esc(G[g.dataset.g].w)+'</h3><p>'+esc(G[g.dataset.g].d)+'</p></div>';$('#dlg').showModal();return}
+ const ph=t.closest('[data-ph]');if(ph){const x=GAL[ph.dataset.ph];$('#dbody').innerHTML='<img alt="" src="'+x.i+'"><div class="dlg"><p>'+esc(x.c||'तस्बिर खण्ड · पृ. '+dn(x.p))+'</p></div>';$('#dlg').showModal();return}
+ const o=t.closest('.opt');if(o&&QZ){const q=QZ.q[QZ.i],ok=o.dataset.o===q.a;document.querySelectorAll('.opt').forEach(b=>{b.disabled=true;if(b.dataset.o===q.a)b.classList.add('ok');else if(b===o)b.classList.add('no')});if(ok)QZ.s++;$('#qn').innerHTML='<p>'+(ok?'सही!':'गलत — सही उत्तर: '+esc(q.a))+'</p><button class="btn" id="nq">'+(QZ.i<QZ.q.length-1?'अर्को प्रश्न →':'नतिजा हेर्नुहोस्')+'</button>';return}
+ if(t.id==='nq'){QZ.i++;QZ.i>=QZ.q.length?quizEnd():quiz();return}
+ if(t.id==='dx'||t===$('#dlg'))$('#dlg').close();
+ if(t.id==='theme'){const r=document.documentElement,d=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=d?'light':'dark';st.set('theme',r.dataset.theme)}
+ const fb=t.closest('#fa,#fb');if(fb){let z=st.get('z',1);z=Math.round(Math.min(1.6,Math.max(.8,z+(fb.id==='fb'?.1:-.1)))*10)/10;st.set('z',z);document.documentElement.style.setProperty('--z',z);const l=$('#zl');if(l)l.textContent=Math.round(z*100)+'%'}});
+{const th=st.get('theme',null);if(th)document.documentElement.dataset.theme=th;document.documentElement.style.setProperty('--z',st.get('z',1))}
+route();
+</script></body></html>
