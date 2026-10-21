@@ -1,26 +1,50 @@
-# Dura Itihas ra Sanskriti website
+<div align="center">
 
-Files
-- `index.html`  the website (do not put book content here)
-- `data.json`   THE ONE FILE YOU EDIT: all book content
-- `data.js`     generated from data.json; index.html loads this
-- `images/`     photos used in the gallery
-- `build.py` / `build.js`  convert data.json -> data.js (use either)
+# 📚 यमबहादुर दुरा — दुरा इतिहास र संस्कृति (Dura History & Culture)
 
-Workflow
-1. Edit `data.json`
-2. Run `python3 build.py`  (or `node build.js`). Add `--watch` to rebuild on every save.
-3. Refresh `index.html` in the browser. No server needed.
+### Digital Heritage Archive & Web Edition · Dura Students Society
 
-If the build fails, it tells you the line or the missing field. The old data.js is kept.
+[![Live Website](https://img.shields.io/badge/Website-Live%20Preview-blue?style=flat&logo=google-chrome)](https://durastudents.github.io/yambahadurdura/)
+[![GitHub Pages Status](https://img.shields.io/badge/Deployment-GitHub%20Pages-success?style=flat&logo=github)](https://github.com/durastudents/yambahadurdura)
+[![Maintained by](https://img.shields.io/badge/Maintained%20by-Dura%20Students%20Society-orange.svg)](https://durastudents.org.np/)
 
-data.json structure
-- `book`: list of chapters `{n, title, pages, sections:[{title, page, paras:[{t:"text"} or {c:"caption"}]}]}`
-- `extra.glossary`: `{w:"word", d:"meaning"}`; glossary words become tap-for-meaning links inside the text
-- `extra.people`: `["name", "place", "contribution"]`
-- `extra.genealogy`: list of text lines
-- `gal`: photos `{p: book page, i: "images/photo-01.jpg", c: "caption"}`; add a photo by putting the file in images/ and adding an entry
+</div>
 
-Tips
-- Keep it valid JSON: text in double quotes, commas between items, no comma after the last item.
-- To add a topic, copy an existing section block inside a chapter.
+---
+
+## 📖 Overview
+
+This repository powers the open digital archive and web reader for **"दुरा इतिहास र संस्कृति" (Dura History and Culture)**, authored by **Yambahadur Dura (यमबहादुर दुरा)** and originally published by **Dura Sewa Samaj (दुरा सेवा समाज)** in **2079 BS**. 
+
+Maintained by the **Dura Students Society**, this project transforms physical archival text into an accessible, searchable, and responsive web platform to safeguard the ancestral identity, oral accounts, and historical milestones of the Dura indigenous community of Nepal.
+
+---
+
+## 🌟 Historical & Cultural Highlights
+
+The archived text explores the foundational pillars of the Dura community:
+* **Origins & Ancestral Roots:** Historical evolution, migration patterns, and early settlement tracks across Nepal.
+* **Social Structures & Traditions:** Traditional governance systems, community development practices, and family lineages.
+* **Language & Cultural Heritage:** Preservation of indigenous expressions, traditional festivals, rituals, songs, and folk practices.
+* **Historical Figures & Contributions:** Documenting notable individuals and community elders who sustained Dura heritage through generations.
+
+---
+
+## 📁 Repository Structure
+
+```text
+yambahadurdura/
+├── index.html          # Core reader interface and structural markup
+├── assets/             # Stylesheets, typography, and visual assets
+└── README.md           # Repository documentation
+```
+---
+
+## ⚖️ Copyright & Legal Notice
+
+> **पुस्तक:** *दुरा इतिहास र संस्कृति*  
+> **लेखक:** यमबहादुर दुरा (Yambahadur Dura)  
+> **प्रकाशक:** दुरा सेवा समाज (Dura Sewa Samaj), २०७९  
+> **सर्वाधिकार:** लेखक तथा प्रकाशकमा निहित।
+
+---
